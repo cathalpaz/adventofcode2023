@@ -5,10 +5,7 @@ with open('input.txt') as f:
         l = line.split(': ')[1:]
         winning, nums = l[0].split(' | ')
         winning = winning.split(' ')
-        winners = set()
-        for n in winning:
-            if n:
-                winners.add(n)
+        winners = set(winning)
 
         nums = nums.split(' ')
         for n in nums:
