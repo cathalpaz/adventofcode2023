@@ -3,7 +3,6 @@ with open("input.txt") as f:
 
     time, distance = f.read().splitlines()
 
-    print(time, distance)
     times = time.split(':   ')[1].split('     ')[1:]
     distances = distance.split(':   ')[1].split('   ')
 
